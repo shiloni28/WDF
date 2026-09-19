@@ -24,7 +24,7 @@ function validateLogin() {
     }
 
 
-    if (username.length <= 8) {
+    if (username.length < 8) {
         alert("Username is invalid.(according to length)");
         document.getElementById("username").focus();
         return false;
