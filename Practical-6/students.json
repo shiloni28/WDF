@@ -1,0 +1,29 @@
+{
+    "student": {
+        "name": "Shiloni Kothari",
+        "age": "19",
+        "gender": "Female",
+        "department": "Computer Engineering",
+        "email": "shiloni@gmail.com",
+        "enrollment": "25DCE047",
+        "contact": "9999999999",
+        "bloodGroup": "B+",
+        "caste": "Jain",
+        "nationality": "Indian",
+        "address": "Ahmedabad, Gujarat",
+
+        "education": {
+            "10th": {
+                "school": "ABC School",
+                "percentage": "90%",
+                "rank": "5"
+            },
+
+            "12th": {
+                "school": "XYZ School",
+                "percentage": "88%",
+                "rank": "8"
+            }
+        }
+    }
+}
