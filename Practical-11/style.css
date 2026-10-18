@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F5F8FC;
+    color: #4A5568;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.5;
+}
+.container {
+    width: 95%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+    color: #6F86B3;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    color: #4A5568;
+}
+.page-header {
+    background: #FFFFFF;
+    border: 1px solid #D9E2EC;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.page-header h1 {
+    margin-top: 0;
+}
+.panel {
+    background: #FFFFFF;
+    border: 1px solid #D9E2EC;
+    border-radius: 8px;
+    padding: 22px;
+    margin: 20px 0;
+}
+.student-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 600px;
+}
+
+label {
+    font-weight: bold;
+    color: #4A5568;
+    margin-top: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 4px 0;
+    border: 1px solid #D9E2EC;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background: #FFFFFF;
+    color: #4A5568;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #AFC0DD;
+    border-color: #6F86B3;
+}
+.btn,
+button,
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    width: auto;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #6F86B3;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #5B739F;
+    color: #FFFFFF;
+}
+
+.secondary {
+    background: #8796AD;
+}
+
+.secondary:hover {
+    background: #65758F;
+}
+
+.danger {
+    background: #C45C65;
+}
+
+.danger:hover {
+    background: #A9444E;
+}
+
+.export {
+    background: #527F70;
+}
+
+.export:hover {
+    background: #3E6659;
+}
+
+.small {
+    padding: 6px 10px;
+    font-size: 13px;
+}
+.filter-form {
+    display: grid;
+    grid-template-columns: minmax(200px, 2fr)
+                           minmax(150px, 1fr)
+                           auto auto auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.filter-form input,
+.filter-form select {
+    margin: 0;
+}
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #FFFFFF;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #D9E2EC;
+    padding: 11px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+th {
+    background: #AFC0DD;
+    color: #2F3B52;
+}
+
+tbody tr:nth-child(even) {
+    background: #F5F8FC;
+}
+
+tbody tr:hover {
+    background: #EAF0F8;
+}
+.actions {
+    white-space: nowrap;
+}
+
+.actions form {
+    display: inline-block;
+    margin: 2px;
+}
+.message {
+    padding: 12px 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.success {
+    background: #E2F3E8;
+    color: #276749;
+    border: 1px solid #B8DFC5;
+}
+.error {
+    background: #FCE8E8;
+    color: #A83232;
+    border: 1px solid #F2C5C5;
+}
+.record-count {
+    color: #4A5568;
+    font-weight: bold;
+    margin: 18px 0;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 22px;
+}
+
+.pagination a {
+    color: #6F86B3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pagination a:hover {
+    color: #5B739F;
+    text-decoration: underline;
+}
+
+
+a {
+    color: #6F86B3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5B739F;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 900px) {
+    .filter-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filter-form input {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .page-header,
+    .panel {
+        padding: 15px;
+    }
+
+    .filter-form {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-form input {
+        grid-column: auto;
+    }
+
+    .btn {
+        max-width: 100%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .actions {
+        white-space: normal;
+    }
+
+    .actions form {
+        display: block;
+    }
+}
